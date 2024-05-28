@@ -1,0 +1,662 @@
+@charset "UTF-8";
+/*-- Шрифти -- */
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+:root {
+  --color-primary-light: rgba(43, 127, 255, 1);
+  --color-primary-white: #ffffff;
+  --color-primary-dark: rgba(1, 28, 68, 1);
+  --background-color: rgba(255, 255, 255, 1);
+  --background-color-modal: rgba(116, 114, 114, 1);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+/* До всього файлу */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Play", sans-serif;
+  line-height: 0.86;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Шапка */
+.header {
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+}
+
+.header-text {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  line-height: 0.85;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.header-text:hover {
+  color: var(--color-primary-dark);
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 240px;
+}
+
+.icon-display {
+  display: flex;
+  gap: 32px;
+}
+
+.icon-header {
+  fill: var(--color-primary-dark);
+}
+
+.icon-header:hover {
+  fill: var(--color-primary-light);
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Зоголовок "Beauty zona"  */
+.main-title {
+  max-width: 529px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  color: var(--color-primary-light);
+  font-family: "Play", sans-serif;
+  text-transform: capitalize;
+  font-size: 140px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 114px;
+}
+
+/* Всі h2 - заголовки  */
+.hero-title {
+  padding-bottom: 48px;
+  color: var(--color-primary-light);
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-title.left {
+  text-align: left;
+}
+
+.hero-title .accent {
+  color: var(--color-primary-dark);
+}
+
+.hero-title-transform {
+  text-transform: capitalize;
+}
+
+/* В секції №1 текст */
+.section-first {
+  padding-top: 122.52px;
+  padding-bottom: 63px;
+  background-image: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(/images/image\ 1576.jpg);
+  background-repeat: no-repeat;
+  background-position: 312px 0;
+  background-size: cover;
+}
+
+.section-text {
+  max-width: 238px;
+  padding-top: 14px;
+  color: rgb(74, 74, 74);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.sectionfirst-text {
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container-first {
+  display: flex;
+  flex-direction: column;
+}
+
+/*В секції №2 текст !*/
+.section-second {
+  padding-bottom: 88px;
+  padding-top: 63px;
+}
+
+.hero-title {
+  padding-bottom: 40px;
+}
+
+.sectionsecond-text {
+  line-height: 1;
+  padding-bottom: 40px;
+  font-size: 22px;
+  color: var(--color-primary-dark);
+}
+
+.sectionsecond-text:last-child {
+  padding-bottom: 0;
+}
+
+.sectionsecond-transform {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.container-second {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.second-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 709px;
+}
+
+.second-img {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex-basis: 499px;
+}
+
+/* В секції №3 текст */
+.section-third {
+  padding-top: 88px;
+  padding-bottom: 48px;
+}
+
+.hero-title {
+  padding-bottom: 48px;
+}
+
+.container-procedures {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-black {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  gap: 56px;
+}
+
+.format-card {
+  background-color: var(--color-primary-white);
+  padding: 24px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.icon-section-third {
+  fill: var(--color-primary-light);
+}
+
+/* В секції №4 текст */
+.text-white {
+  font-size: 22px;
+  color: var(--color-primary-white);
+  line-height: 0.8;
+  text-align: center;
+  padding-top: 372px;
+}
+
+.text-procedures {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.item-procedures {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.format-procedures {
+  height: 456px;
+  width: 344px;
+  background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--color-primary-dark) 101.39%);
+  transition: transform 0.3s;
+  border-radius: 4px 120px;
+}
+
+.format-procedures:hover {
+  transform: scale(1.05);
+}
+
+/* В секції №4 кнопки круглые */
+.button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-arrow:hover {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-white);
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.button-arrow.next {
+  transform: rotate(180deg);
+}
+
+.icon-arrow {
+  fill: var(--color-primary-dark);
+}
+
+.button-arrow:hover .icon-arrow {
+  fill: var(--color-primary-white);
+}
+
+/* В секції №5 */
+.section-fifty {
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+
+.container-fifty {
+  display: flex;
+  gap: 32px;
+}
+
+.container-maps {
+  flex-shrink: 0;
+  border-radius: 32px;
+  border: none;
+}
+
+.section-form {
+  position: relative;
+  width: 100%;
+  max-width: 432px;
+  height: 100%;
+  max-height: 482px;
+  padding-top: 48px;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-bottom: 48px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+}
+
+.form-first {
+  margin-bottom: 16px;
+}
+
+/* В секції №5 і футер текст 
+
+
+.text-gris {
+  color: var(--background-color-modal);
+}
+
+.text-gris-transform {
+  text-decoration: underline;
+  color: var(--background-color-modal);
+} */
+/* Footer */
+.footer-block {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-container::before {
+  position: absolute;
+  width: 247px;
+  height: 152px;
+  right: 0;
+  background-repeat: no-repeat;
+  bottom: 0;
+  background-image: url(/images/cups-png.png);
+  content: "*";
+}
+
+.footer-address,
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.icon-footer {
+  fill: var(--color-primary-white);
+}
+
+.icon-footer:hover {
+  fill: var(--color-primary-light);
+}
+
+.nav-transform {
+  color: var(--color-primary-white);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 0.85;
+  margin-bottom: 16px;
+}
+
+.address-transform {
+  color: var(--color-primary-white);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 0.85;
+  margin-bottom: 16px;
+}
+
+.data-protected {
+  color: var(--background-color-modal);
+  font-size: 13px;
+}
+
+/* КНОПКА "Замовити дзвінок" */
+.button {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light);
+  border: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  max-height: 53px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-light);
+  max-height: 53px;
+}
+
+/* КНОПКА "Записатися безкоштовно" 
+.button {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-white);
+  border:2px solid var(--color-primary-white);
+  border-radius: 32px;
+  width: Hug (281px)px;
+  height: Hug (53px)px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px; 
+  cursor: pointer; 
+  font-family: "Roboto" , sans-serif;
+  font-weight: 600;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-light)
+} */
+/*Модальне вікно*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: var(--background-color-modal);
+  transition: opacity 0.5s, visibility 0.3s;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding-top: 42px;
+  padding-left: 144px;
+  padding-right: 144px;
+  padding-bottom: 42px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+}
+
+/*Форми в модальному вікні*/
+.form-title {
+  color: var(--color-primary-white);
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  width: 100%;
+}
+
+.form-input {
+  padding: 18px 33px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.17;
+  color: var(--background-color);
+  border: 2px solid var(--background-color-modal);
+  border-radius: 32px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  background-color: var(--background-color-modal);
+  outline: none;
+}
+
+.form-input::-moz-placeholder {
+  color: var(--background-color);
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.form-input::placeholder {
+  color: var(--background-color);
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.section-last-transform {
+  color: var(--color-primary-light);
+}
+
+.button-form {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.button-form:hover {
+  background-color: transparent;
+  color: var(--background-color);
+  border: 2px solid var(--color-primary-light);
+}
+
+.text-form {
+  max-width: 210px;
+  margin: 0 auto;
+  color: var(--background-color-modal);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.text-form-transform {
+  text-decoration: underline;
+  color: var(--background-color-modal);
+}
+
+.form-text {
+  margin-bottom: 32px;
+  color: var(--color-primary-white);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 0.85;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
